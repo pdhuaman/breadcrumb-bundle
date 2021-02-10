@@ -2,11 +2,11 @@
 
 namespace Thormeier\BreadcrumbBundle\Provider;
 
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Thormeier\BreadcrumbBundle\Model\Breadcrumb;
 use Thormeier\BreadcrumbBundle\Model\BreadcrumbCollectionInterface;
 use Thormeier\BreadcrumbBundle\Model\BreadcrumbInterface;
+use Symfony\Component\HttpKernel\Event\RequestEvent;
 
 /**
  * Breadcrumb factory class that is used to generate and alter breadcrumbs and inject them where needed
@@ -48,7 +48,7 @@ class BreadcrumbProvider implements BreadcrumbProviderInterface
      *
      * @param GetResponseEvent $event
      */
-    public function onKernelRequest(GetResponseEvent $event)
+    public function onKernelRequest(RequestEvent $event)
     {
         if ($event->getRequestType() === HttpKernelInterface::MASTER_REQUEST) {
             $this->requestBreadcrumbConfig = $event->getRequest()->attributes->get('_breadcrumbs', array());
