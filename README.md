@@ -1,10 +1,9 @@
 BreadcrumbBundle
 ================
 
-[![Build Status](https://travis-ci.org/thormeier/breadcrumb-bundle.png?branch=master)](https://travis-ci.org/thormeier/breadcrumb-bundle)
-
 ## Introduction
 
+This is fork of [https://github.com/thormeier/breadcrumb-bundle](https://github.com/thormeier/breadcrumb-bundle) with merged changes and fixes for symfony 5.x.
 This Symfony bundle provides integration of breadcrumbs via route config and rendering in your Twig templates.
 This bundle is heavily inspired by the inactive [https://github.com/xi-project/xi-bundle-breadcrumbs](https://github.com/xi-project/xi-bundle-breadcrumbs)
 
@@ -12,7 +11,7 @@ This bundle is heavily inspired by the inactive [https://github.com/xi-project/x
 
 ### Step 1: Composer require
 
-    $ php composer.phar require "thormeier/breadcrumb-bundle"
+    $ php composer.phar require "szymat/breadcrumb-bundle"
 
 ### Step2: Enable the bundle in the kernel
 
