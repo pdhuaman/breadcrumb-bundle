@@ -1,5 +1,5 @@
 {
-    "name": "szymat/breadcrumb-bundle",
+    "name": "pdhuaman/breadcrumb-bundle",
     "type": "symfony-bundle",
     "description": "Symfony bundle for easy setup of breadcrumbs",
     "license": "MIT",
